@@ -1,0 +1,99 @@
+*{
+  font-family: "Inter";
+  font-style: light;
+}
+.container {
+    margin: 0 auto;  
+    width: 80%; 
+    max-width: 500px;
+}
+
+.hr-lines {
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    color: #FF6B82;
+}
+
+.hr-lines:before, .hr-lines:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width:10%;
+    height: 1px;
+    background-color: #C8C8C8;
+}
+
+.hr-lines:before {
+    left:32%;
+}
+
+.hr-lines:after {
+    right: 32%;
+}
+.pricing-option{
+    display: flex;
+    margin-bottom: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8C8C8;
+    padding: 20px;
+    gap: 10px;
+}
+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:12rem;
+}
+.charges{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:12rem;
+    padding-bottom: 20px;
+}
+
+.pOne ,.pTwo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.discPrice {
+    margin: 0;
+}
+.std-price{
+    color: #C8C8C8;
+    font-size: 12px;
+}
+.delClick{
+    display: flex;
+    flex-direction: column;
+}
+
+.delClick button{
+    border: none;
+    border-radius: 6px;
+    background: #FF6B82;
+    color: #fff;
+    padding: 0.8rem;
+
+}
+.delClick span{
+    color: #C8C8C8;
+    font-size: 16px;
+    text-align: right;
+}
+.offer{
+    background: #FF6B82;
+    color: #fff;
+    font-size: 13px;
+    padding:3px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+.subhead{
+    font-size: 14px;
+    font-weight: 100;
+}
