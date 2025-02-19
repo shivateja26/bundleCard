@@ -5,69 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bundle Cart</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400&family=Kanit&family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400&family=Kanit&family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div class="header">
-            <h1 class="hr-lines">YAY! It's BOGO</h1>
-        </div>
-        <div class="container">
+    <div class="header">
+        <h1 class="hr-lines">YAY! It's BOGO</h1>
+    </div>
+    <div class="container">
+        <!-- Unit 1 Pricing Option -->
         <div class="pricing-option">
-           <input type="radio" name="pricing" value="unit1">
-           <label>
-            <span class="pOne">
-                <span class="price-label"><strong>1 Unit</strong><span class="offer">10% off</span></span>
-                <span class="subhead">Standard Price</span>   
-            </span>
-            <span class="pTwo">
-                <span class="discPrice"><strong>$10.00 USD</strong></span>
-                <span class="std-price"><s>$24.00 USD</s></span>
-            </span>
-            </label>
+            <div class="row">
+                <input type="radio" name="pricing" value="unit1" id="unit1">
+                <label for="unit1">
+                    <span class="pOne">
+                        <span class="price-label"><strong>1 Unit</strong><span class="offer">10% off</span></span>
+                        <span class="subhead">Standard Price</span>   
+                    </span>
+                    <span class="pTwo">
+                        <span class="discPrice"><strong>$10.00 USD</strong></span>
+                        <span class="std-price"><s>$24.00 USD</s></span>
+                    </span>
+                </label>
+            </div>
+            <div class="variant-mini-container" id="unit1-options" style="display:none;">
+                <div class="productSelect">
+                    <div class="row">
+                        <p>Size</p>
+                        <p>Color</p>
+                    </div>
+                    <div class="row">
+                        <label for="size1">#1</label>
+                        <select id="size1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color1">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="size2">#2</label>
+                        <select id="size2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color2">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="size3">#3</label>
+                        <select id="size3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color3">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="pricing-option">
-            <input type="radio" name="pricing" value="unit1">
-            <label>
-             <span class="pOne">
-                 <span class="price-label"><strong>2 Unit</strong><span class="offer">20% off</span></span>
-                 <span class="subhead">Standard Price</span>
-                 
-             </span>
-             <span class="pTwo">
-                 <span class="discPrice"><strong>$18.00 USD</strong></span>
-                 <span class="std-price"><s>$24.00 USD</s></span>
-             </span>
-             </label>
-         </div>
-         <div class="pricing-option">
-            <input type="radio" name="pricing" value="unit1">
-            <label>
-             <span class="pOne">
-                 <span class="price-label"><strong>3 Unit</strong><span class="offer">30% off</span></span>
-                 <span class="subhead">Standard Price</span>
-                 
-             </span>
-             <span class="pTwo">
-                 <span class="discPrice"><strong>$24.00 USD</strong></span>
-                 <span class="std-price"><s>$24.00 USD</s></span>
-             </span>
-             </label>
-         </div>
-         <div >
-        <span class="charges" >
-            <span style="color:#FF6B82">Free Delivery</span>
-            <span>Total : $18:00 USD</span>
-        </span>
-         </div>
-         <div class="delClick">
-        <button style="font-weight: 900;"><span style="font-size: 20px;color: #fff;">&plus;</span> Add Cart</button>
-        <span>@ Power by Pumber</span>
-        </div>
-        </div>
-        
 
+        <!-- Unit 2 Pricing Option -->
+        <div class="pricing-option">
+            <div class="row">
+                <input type="radio" name="pricing" value="unit2" id="unit2">
+                <label for="unit2">
+                    <span class="pOne">
+                        <span class="price-label"><strong>2 Unit</strong><span class="offer">20% off</span></span>
+                        <span class="subhead">Standard Price</span>
+                    </span>
+                    <span class="pTwo">
+                        <span class="discPrice"><strong>$18.00 USD</strong></span>
+                        <span class="std-price"><s>$24.00 USD</s></span>
+                    </span>
+                </label>
+            </div>
+            <div class="variant-mini-container" id="unit2-options" style="display:none;">
+                <div class="productSelect">
+                    <div class="row">
+                        <p>Size</p>
+                        <p>Color</p>
+                    </div>
+                    <div class="row">
+                        <label for="size1">#1</label>
+                        <select id="size1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color1">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="size2">#2</label>
+                        <select id="size2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color2">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="size3">#3</label>
+                        <select id="size3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color3">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Unit 3 Pricing Option -->
+        <div class="pricing-option">
+            <div class="row">
+                <input type="radio" name="pricing" value="unit3" id="unit3">
+                <label for="unit3">
+                    <span class="pOne">
+                        <span class="price-label"><strong>3 Unit</strong><span class="offer">30% off</span></span>
+                        <span class="subhead">Standard Price</span>
+                    </span>
+                    <span class="pTwo">
+                        <span class="discPrice"><strong>$24.00 USD</strong></span>
+                        <span class="std-price"><s>$24.00 USD</s></span>
+                    </span>
+                </label>
+            </div>
+            <div class="variant-mini-container" id="unit3-options" style="display:none;">
+                <div class="productSelect">
+                    <div class="row">
+                        <p>Size</p>
+                        <p>Color</p>
+                    </div>
+                    <div class="row">
+                        <label for="size1">#1</label>
+                        <select id="size1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color1">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="size2">#2</label>
+                        <select id="size2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color2">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="size3">#3</label>
+                        <select id="size3">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color3">
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <span class="charges">
+                <span style="color:#FF6B82">Free Delivery</span>
+                <span>Total : $18:00 USD</span>
+            </span>
+        </div>
+        <div class="delClick">
+            <button style="font-weight: 900;">
+                <span style="font-size: 20px;color: #fff;">&plus;</span> Add Cart
+            </button>
+            <span>@ Power by Pumber</span>
+        </div>
+    </div>
+    
+    <!-- Place JavaScript here -->
+    <script src="app.js"></script>
 </body>
 </html>
