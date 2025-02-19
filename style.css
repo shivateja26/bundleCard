@@ -1,229 +1,232 @@
 * {
-    font-family: "Inter", serif;
-    font-style: light;
-  }
-  
-  .container {
-    margin: 0 auto;  
-    width: 80%; 
-    max-width: 500px;
-  }
-  .header{
+  font-family: "Inter", serif;
+  font-style: light;
+}
+
+.container {
+  margin: 0 auto;  
+  width: 80%; 
+  max-width: 500px;
+}
+.header {
   width: 100%;
-  }
-  
-  .hr-lines {
-    text-align: center;
-    position: relative;
-    font-size: 2rem;
-    color: #FF6B82;
-  }
-  
-  .hr-lines:before, .hr-lines:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width:8%;
-    height: 1px;
-    background-color: #C8C8C8;
-  }
-  
-  .hr-lines:before {
-    left:33.5%;
-  }
-  
-  .hr-lines:after {
-    right: 33.5%;
-  }
-  
-  .pricing-option {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C8C8C8;
-    padding: 20px;
-    gap: 10px;
-    transition: border-color 0.3s ease; 
 }
 
+.hr-lines {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  color: #FF6B82;
+}
+
+.hr-lines:before, .hr-lines:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width:8%;
+  height: 1px;
+  background-color: #C8C8C8;
+}
+
+.hr-lines:before {
+  left:33.5%;
+}
+
+.hr-lines:after {
+  right: 33.5%;
+}
+
+.pricing-option {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C8C8C8;
+  padding: 20px;
+  gap: 10px;
+  transition: border-color 0.3s ease; 
+  background: #fff9fa;
+}
+
+/* Hover effect when not selected */
 .pricing-option:hover {
-    border-color: #FF6B82;  
+  border-color: #FF6B82;
 }
+
+/* Apply border color change when radio button is checked */
 input[type="radio"]:checked + label .pricing-option {
-    border-color: #FF6B82;
+  border-color: #FF6B82;
 }
 
-  
-  .price-label {
-    font-style: solid;
-  }
-  
-  label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12rem;
-  }
-  
-  .charges {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12rem;
-    padding-bottom: 20px;
-  }
-  
-  .pOne, .pTwo {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .discPrice {
-    margin: 0;
-  }
-  
-  .std-price {
-    color: #C8C8C8;
-    font-size: 12px;
-  }
-  
-  .delClick {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .delClick button {
-    border: none;
-    border-radius: 6px;
-    background: #FF6B82;
-    color: #fff;
-    padding: 0.8rem;
-  }
-  
-  .delClick span {
-    color: #C8C8C8;
-    font-size: 16px;
-    text-align: right;
-  }
-  
-  .offer {
-    background: #FF6B82;
-    color: #fff;
-    font-size: 13px;
-    padding: 2px 5px;
-    margin-left: 5px;
-    border-radius: 2px;
-  }
-  
-  .subhead {
-    font-size: 14px;
-    font-weight: 100;
-  }
-  
-  .productSelect {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 1rem;
-  }
-  
-  select {
-    margin-right: 20px;
-    padding: 5px;
-    width: 100px;
-  }
-  
-  .variant-mini-container {
-    display: none; 
-  }
-  
-  .variant-mini-container.show {
-    display: block; 
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
+.price-label {
+  font-style: solid;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rem;
+}
+
+.charges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rem;
+  padding-bottom: 20px;
+}
+
+.pOne, .pTwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.discPrice {
+  margin: 0;
+}
+
+.std-price {
+  color: #C8C8C8;
+  font-size: 12px;
+}
+
+.delClick {
+  display: flex;
+  flex-direction: column;
+}
+
+.delClick button {
+  border: none;
+  border-radius: 6px;
+  background: #FF6B82;
+  color: #fff;
+  padding: 0.8rem;
+}
+
+.delClick span {
+  color: #C8C8C8;
+  font-size: 16px;
+  text-align: right;
+}
+
+.offer {
+  background: #FF6B82;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 5px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
+.subhead {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.productSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 1rem;
+}
+
+select {
+  margin-right: 20px;
+  padding: 5px;
+  width: 100px;
+}
+
+.variant-mini-container {
+  display: none; 
+}
+
+.variant-mini-container.show {
+  display: block; 
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
       margin: 0 auto;  
-      width:80%; 
+      width: 80%; 
       max-width: 600px;
-    }
+  }
 
-    .hr-lines {
-        font-size: 1rem;
-    }
+  .hr-lines {
+      font-size: 1rem;
+  }
 
-    label {
-        gap:2px;
-    }
+  label {
+      gap: 2px;
+  }
 
+  .delClick {
+      align-items: center;
+  }
 
-    .delClick {
-        align-items: center;
-    }
+  .delClick button {
+      width: 100%;
+      padding: 0.7rem;
+  }
 
-    .delClick button {
-        width: 100%;
-        padding: 0.7rem;
-    }
+  .row {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+  }
 
-    .row {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    select {
-        margin-right: 0;
-        width: 100%;
-    }
+  select {
+      margin-right: 0;
+      width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    width:100%;
-}
-.hr-lines:before {
-  left:20.5%;
-}
+      width: 100%;
+  }
 
-.hr-lines:after {
-  right: 20.5%;
-}
+  .hr-lines:before {
+      left: 20.5%;
+  }
 
-.hr-lines {
-    font-size: 1rem;
-}
+  .hr-lines:after {
+      right: 20.5%;
+  }
 
-label {
-    gap:2px;
-}
+  .hr-lines {
+      font-size: 1rem;
+  }
 
+  label {
+      gap: 2px;
+  }
 
-.delClick {
-    align-items: center;
-}
+  .delClick {
+      align-items: center;
+  }
 
-.delClick button {
-    width: 80%;
-    padding: 0.7rem;
-}
+  .delClick button {
+      width: 80%;
+      padding: 0.7rem;
+  }
 
-.row {
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-}
+  .row {
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+  }
 
-select {
-    margin-right: 0;
-    width: 100%;
-}
+  select {
+      margin-right: 0;
+      width: 100%;
+  }
 }
