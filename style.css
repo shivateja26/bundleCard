@@ -49,7 +49,6 @@
   background: #fff9fa;
 }
 
-/* Hover effect when not selected */
 .pricing-option:hover {
   border-color: #FF6B82;
 }
@@ -159,6 +158,12 @@ select {
       width: 80%; 
       max-width: 600px;
   }
+  .productSelect {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
 
   .hr-lines {
       font-size: 1rem;
