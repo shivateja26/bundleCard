@@ -152,6 +152,23 @@ select {
 }
 
 /* Media Queries for smaller screens */
+@media screen and (max-width:1098px){
+  .hr-lines:before, .hr-lines:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width:13%;
+    height: 1px;
+    background-color: #C8C8C8;
+  }
+  .hr-lines:before {
+    left: 25.5%;
+}
+
+.hr-lines:after {
+    right: 25.5%;
+}
+}
 @media screen and (max-width: 768px) {
   .container {
       margin: 0 auto;  
@@ -198,13 +215,20 @@ select {
   .container {
       width: 100%;
   }
-
+  .hr-lines:before, .hr-lines:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width:20%;
+    height: 1px;
+    background-color: #C8C8C8;
+  }
   .hr-lines:before {
-      left: 20.5%;
+      left: 10.5%;
   }
 
   .hr-lines:after {
-      right: 20.5%;
+      right: 10.5%;
   }
 
   .hr-lines {
