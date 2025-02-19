@@ -8,6 +8,9 @@
     width: 80%; 
     max-width: 500px;
   }
+  .header{
+  width: 100%;
+  }
   
   .hr-lines {
     text-align: center;
@@ -43,15 +46,15 @@
     padding: 20px;
     gap: 10px;
     transition: border-color 0.3s ease; 
-  }
-  
-  .pricing-option:hover {
-    border-color: #FF6B82; 
-  }
-  
-  input[type="radio"]:checked + label .pricing-option {
-    border-color: #FF6B82; 
-  }
+}
+
+.pricing-option:hover {
+    border-color: #FF6B82;  
+}
+input[type="radio"]:checked + label .pricing-option {
+    border-color: #FF6B82;
+}
+
   
   .price-label {
     font-style: solid;
@@ -145,3 +148,81 @@
     display: block; 
   }
   
+  @media screen and (max-width: 768px) {
+    .container {
+      margin: 0 auto;  
+      width:80%; 
+      max-width: 600px;
+    }
+
+    .hr-lines {
+        font-size: 1rem;
+    }
+
+    label {
+        gap:2px;
+    }
+
+
+    .delClick {
+        align-items: center;
+    }
+
+    .delClick button {
+        width: 100%;
+        padding: 0.7rem;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    select {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width:100%;
+}
+.hr-lines:before {
+  left:20.5%;
+}
+
+.hr-lines:after {
+  right: 20.5%;
+}
+
+.hr-lines {
+    font-size: 1rem;
+}
+
+label {
+    gap:2px;
+}
+
+
+.delClick {
+    align-items: center;
+}
+
+.delClick button {
+    width: 80%;
+    padding: 0.7rem;
+}
+
+.row {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+select {
+    margin-right: 0;
+    width: 100%;
+}
+}
