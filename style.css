@@ -161,6 +161,19 @@ select {
     height: 1px;
     background-color: #C8C8C8;
   }
+  .pricing-option {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8C8C8;
+    padding: 20px;
+    gap: 10px;
+    transition: border-color 0.3s ease; 
+    background: #fff9fa;
+  }
+  
   .hr-lines:before {
     left: 25.5%;
 }
@@ -175,23 +188,82 @@ select {
       width: 80%; 
       max-width: 600px;
   }
-  .productSelect {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  .hr-lines {
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+    color: #FF6B82;
   }
   
-
-  .hr-lines {
-      font-size: 1rem;
+  .hr-lines:before, .hr-lines:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width:25%;
+    height: 1px;
+    background-color: #C8C8C8;
   }
-
+  
+  .hr-lines:before {
+    left:10.5%;
+  }
+  
+  .hr-lines:after {
+    right: 10.5%;
+  }
+  
+  .pricing-option {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8C8C8;
+    padding: 20px;
+    gap: 10px;
+    transition: border-color 0.3s ease; 
+    background: #fff9fa;
+  }
+  
+  .pricing-option:hover {
+    border-color: #FF6B82;
+  }
+  
+  input[type="radio"]:checked + label .pricing-option {
+    border-color: #FF6B82;
+  }
+  
+  .price-label {
+    font-style: solid;
+  }
+  
   label {
-      gap: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12rem;
   }
-
-  .delClick {
-      align-items: center;
+  
+  .charges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12rem;
+    padding-bottom: 20px;
+  }
+  
+  .pOne, .pTwo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .discPrice {
+    margin: 0;
+  }
+  
+  .std-price {
+    color: #C8C8C8;
+    font-size: 12px;
   }
 
   .delClick button {
@@ -200,62 +272,113 @@ select {
   }
 
   .row {
-      flex-direction: column;
+      flex-direction: row;
       width: 100%;
       align-items: flex-start;
   }
 
   select {
       margin-right: 0;
-      width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-      width: 100%;
-  }
-  .hr-lines:before, .hr-lines:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    width:20%;
-    height: 1px;
-    background-color: #C8C8C8;
-  }
-  .hr-lines:before {
-      left: 10.5%;
-  }
+    margin: 0 auto;  
+    width: 100%; 
+}
+.hr-lines {
+  text-align: center;
+  position: relative;
+  font-size: 1.5rem;
+  color: #FF6B82;
+}
 
-  .hr-lines:after {
-      right: 10.5%;
-  }
+.hr-lines:before, .hr-lines:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width:8%;
+  height: 1px;
+  background-color: #C8C8C8;
+}
 
-  .hr-lines {
-      font-size: 1rem;
-  }
+.hr-lines:before {
+  left:13.5%;
+}
 
-  label {
-      gap: 2px;
-  }
+.hr-lines:after {
+  right: 13.5%;
+}
+.pricing-option {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C8C8C8;
+  padding: 20px;
+  gap: 10px;
+  transition: border-color 0.3s ease; 
+  background: #fff9fa;
+}
 
-  .delClick {
-      align-items: center;
-  }
+.pricing-option:hover {
+  border-color: #FF6B82;
+}
 
-  .delClick button {
-      width: 80%;
-      padding: 0.7rem;
-  }
+input[type="radio"]:checked + label .pricing-option {
+  border-color: #FF6B82;
+}
 
-  .row {
-      flex-direction: column;
-      width: 100%;
-      align-items: flex-start;
-  }
+.price-label {
+  font-style: solid;
+}
 
-  select {
-      margin-right: 0;
-      width: 100%;
-  }
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.charges {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12rem;
+  padding-bottom: 20px;
+}
+
+.pOne, .pTwo {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.discPrice {
+  margin: 0;
+}
+
+.std-price {
+  color: #C8C8C8;
+  font-size: 12px;
+}
+
+.delClick button {
+    width: 100%;
+    padding: 0.7rem;
+}
+.offer{
+  font-size: 10px;
+}
+.row {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+}
+
+select {
+    margin-right: 0;
+}
 }
